@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AlertPage extends StatelessWidget {
+  const AlertPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,7 +11,7 @@ class AlertPage extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-          child: Text("Mostrar Alerta"),
+          child: const Text("Mostrar Alerta"),
           onPressed: () => _showAlert(context),
         ),
       ),
@@ -22,15 +24,15 @@ class AlertPage extends StatelessWidget {
         barrierDismissible: true,
         builder: (context) {
           return AlertDialog(
-            title: Text("Titulo"),
+            title: const Text("Titulo"),
             content: Column(
               mainAxisSize: MainAxisSize.min,
-              children: [Text("Contenido de la caja de Alerta"), FlutterLogo()],
+              children: const [Text("Contenido de la caja de Alerta"), FlutterLogo()],
             ),
             actions: [
               TextButton(
                   onPressed: () => Navigator.of(context).pop(),
-                  child: Text("Ok")),
+                  child: const Text("Ok")),
             ],
           );
         });

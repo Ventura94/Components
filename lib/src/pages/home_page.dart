@@ -1,4 +1,3 @@
-import 'package:components/src/pages/alert_page.dart';
 import 'package:components/src/providers/menu_provider.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +18,7 @@ class HomePage extends StatelessWidget {
   FutureBuilder<List> _listViews() {
     return FutureBuilder(
       future: menuProvider.chargeData(),
-      initialData: [],
+      initialData: const [],
       builder: (BuildContext context, AsyncSnapshot<List<dynamic>> snapshot) {
         return ListView(
           children: _listViewItems(snapshot.data, context),

@@ -9,6 +9,8 @@ class MyIconsString {
     "folder_open": Icons.folder_open,
     "donut_large": Icons.donut_large,
     "input": Icons.input,
+    "tune": Icons.tune,
+
   };
 
   static Icon getIcon(String name) {
