@@ -82,3 +82,4 @@ class _SliderPageState extends State<SliderPage> {
     );
   }
 }
+// Clase 86

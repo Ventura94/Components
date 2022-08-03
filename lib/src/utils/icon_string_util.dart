@@ -10,7 +10,7 @@ class MyIconsString {
     "donut_large": Icons.donut_large,
     "input": Icons.input,
     "tune": Icons.tune,
-
+    "list": Icons.list,
   };
 
   static Icon getIcon(String name) {
